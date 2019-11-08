@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.18 10.58">
+                    <defs />
+                    <path
+                        d="M1.73 1.73v1.58l.53 1.04v4.66h1.61V7.97h.53v1.56l-.27.53H.94l-.27-.53v-8.3L.94.72h3.2l.27.53v1.54h-.54V1.73z">
+                        <animate id="letterC" attributeName="fill-opacity" from="0" to="1" dur="1s" begin="0.2s"
+                            fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M7.23 6.94H6.15v2.07h1.08zm-1.87 3.12l-.27-.53v-3.1l.27-.53h1.87V3.82H5.62v1.03h-.53V3.3l.26-.51H7.5l.26.51v2.1l.53 1.04v3.1l-.27.53z">
+                        <animate id="letterA" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterC.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M11.46 3.82h-1.6V5.4l.53 1.03v3.1l-.28.53H9.07l-.28-.53V3.3l.28-.53h2.64l.28.53v6.75h-.53z">
+                        <animate id="letterN" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterA.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M13.22 10.06l-.27-.53v-5.7h-.55V2.77h.55V.7h.53v2.07h1.07v1.04H14v1.56l.54 1.05-.01 3.1-.27.53z">
+                        <animate id="letterT" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterN.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M15.72 2.78v2.6l.54 1.05v3.1l-.28.53h-.52l-.27-.53V2.78zm0-.83h-.53l-.1-.18v-.72l.1-.19h.53l.1.19v.72z">
+                        <animate id="letterI" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterT.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path d="M19.4 3.82h-1.6V5.4l.53 1.03v3.1l-.27.53H17l-.28-.53V3.3l.28-.53h2.65l.27.53v6.75h-.53z">
+                        <animate id="letterN2" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterI.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M21.76 10.06h-1.05l-.27-.53v-8.3l.27-.52h.52l.27.53.01 1.54h1.86l.27.55v6.73h-.54V3.82h-1.6v1.56l.53 1.03v3.12z">
+                        <animate id="letterH" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterN2.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M24.46 10.06l-.28-.53V3.3l.28-.53h2.64l.28.53v6.22l-.28.53zm2.39-6.24h-1.6V5.4l.53 1.01v2.6h1.07z">
+                        <animate id="letterO" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterH.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M31.1 9.53l.28.53h2.66l.27-.53v-8.3L34.05.7h-.53l-.27.53v1.54h-1.87l-.27.53zm.55-5.7h1.6v1.55l-.54 1.05V9h-1.06z">
+                        <animate id="letterD" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterO.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M37.07 6.94H36v2.07h1.07zm-1.87 3.12l-.27-.53v-3.1l.27-.53h1.87V3.82h-1.61v1.03h-.53V3.3l.27-.51h2.13l.27.51v2.1l.52 1.04v3.1l-.27.53z">
+                        <animate id="letterA2" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterD.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M43.04 1.73v1.6l.52 1v5.21l-.26.52h-1.06l-.27-.53v-8.3l.27-.52h2.4l.27.53.27-.53h1.85l.27.53v8.3l-.26.52h-.53l-.27-.52v-7.8h-1.07v8.32h-.54V1.73z">
+                        <animate id="letterM" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterA2.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M50.9 5.9V3.82h-1.6V5.9zm-1.07 1.04v2.07h1.07V7.97h.54v1.56l-.27.53H48.5l-.27-.53V3.29l.26-.51h2.67l.26.51v3.14l-.26.51z">
+                        <animate id="letterE" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterM.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path d="M52.24 10.06l-.27-.53v-8.3l.27-.52h.52l.28.53v4.14l.52 1.03v3.12l-.27.53z">
+                        <animate id="letterL" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterE.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M54.66 2.78v2.6l.54 1.05v3.1l-.27.53h-.53l-.27-.53V2.78zm0-.83h-.53l-.1-.18v-.72l.1-.19h.53l.1.19v.72z">
+                        <animate id="letterI2" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterL.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M56.4 10.06l-.28-.53v-5.7h-.54V2.77h.54V.7h.54v2.07h1.07v1.04h-.54v1.56l.54 1.05-.01 3.1-.27.53z">
+                        <animate id="letterT2" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterI2.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                    <path
+                        d="M60.33 6.94h-1.07v2.07h1.07zm-1.86 3.12l-.28-.53v-3.1l.28-.53h1.86V3.82h-1.6v1.03h-.54V3.3l.27-.51h2.13l.27.51v2.1l.53 1.04v3.1l-.28.53z">
+                        <animate id="letterA3" attributeName="fill-opacity" from="0" to="1" dur="1s"
+                            begin="letterT2.begin + 0.2s" fill="freeze" />
+
+                    </path>
+                </svg>

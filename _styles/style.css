@@ -1,0 +1,356 @@
+@font-face {
+    src: url("../_fontes/TaxiDriver.ttf");
+    font-family: "Taxi Driver";
+}
+
+@font-face {
+    src: url("../_fontes/computer-font.ttf");
+    font-family: "Computer-font";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 16px;
+    transition: all 0.4s ease-out;
+}
+
+.max-header {
+    background-color: #2574a9;
+    height: 100px;
+}
+
+.main-header {
+    background-color: #c5eff7;
+    height: 80px;
+}
+
+.conteiner {
+    max-width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: "lgo ... nav";
+    grid-auto-columns: auto 1fr auto;
+    align-content: center;
+}
+
+.logo {
+    grid-area: lgo;
+}
+
+.logo svg {
+    left: 0;
+    fill-opacity: 0;
+    transition: all 0.4s ease-out;
+}
+svg#logotipo {
+    padding-right: 5px;
+}
+
+.max-logo svg#lettring {
+    width: 320px;
+    fill: #c5eff7;
+}
+
+.main-logo svg#lettring {
+    width: 280px;
+    fill: #2574a9;
+}
+
+.max-logo svg#logotipo {
+    width: 60px;
+    height: 60px;
+    fill: #c5eff7;
+}
+
+.main-logo svg#logotipo {
+    width: 50px;
+    height: 50px;
+    fill: #2574a9;
+}
+
+.nav-bar {
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+}
+
+.nav-bar a {
+    position: relative;
+    font-family: "Taxi Driver";
+    text-transform: uppercase;
+    transition: all 0.4s ease-out;
+}
+
+.nav-bar a::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+}
+
+.nav-bar a:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+}
+
+.nav-bar a:hover::after {
+    transform: scaleX(1);
+}
+
+.max-nav a {
+    font-size: 1em;
+    color: #c5eff7
+}
+
+.main-nav a {
+    font-size: 0.875em;
+    color: #2574a9
+}
+
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+.ghost {
+    width: 100%;
+    height: 100px;
+    background-color: #cae1f1;
+}
+
+@media (max-width: 768px) {
+    .conteiner {
+        position: relative;
+        padding: 0 20px;
+        display: grid;
+        grid-template-areas: "lgo ... mnu";
+    }
+    section p {
+        font-size: 0.3em;
+    }
+    
+    .max-logo svg#lettring {
+        width: 220px;
+    }
+    .main-logo svg#lettring {
+        width: 180px;
+    }
+    .max-logo svg#logotipo {
+        width: 35px;
+        height: 35px;
+    }
+    .main-logo svg#logotipo {
+        width: 25px;
+        height: 25px;
+    }
+    .max-header {
+        height: 80px;
+    }
+    .main-header {
+        height: 60px;
+    }
+    .menu {
+        grid-area: mnu;
+        display: grid;
+        align-content: center;
+        cursor: pointer;
+    }
+    .hamburger {
+        position: relative;
+        width: 28px;
+        height: 3px;
+        transition: all 0.4s ease-out;
+    }
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+        transition: all 0.4s ease-out;
+    }
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c5eff7;
+        transition: all 0.4s ease-out;
+    }
+    .max-hamburger, .max-hamburger::before, .max-hamburger::after {
+        background-color: #c5eff7;
+    }
+    .main-hamburger, .main-hamburger::before, .main-hamburger::after {
+        background-color: #2574a9;
+    }
+    .close-btn {
+        width: 32px;
+        transform: rotateZ(45deg);
+    }
+    .close-btn::before, .close-btn::after {
+        top: 0;
+        transform: rotateZ(90deg);
+    }
+    .nav-bar {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #2980b9;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-out;
+    }
+    .max-nav {
+        top: 80px;
+        height: calc(100vh - 80px);
+    }
+    .main-nav {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+    .menu-opened {
+        transform: translateX(0);
+    }
+    .nav-bar ul {
+        justify-content: center;
+        grid-auto-flow: row;
+        grid-gap: 80px;
+    }
+    .nav-bar li {
+        text-align: center;
+    }
+    .main-nav a {
+        font-size: 1em;
+        color: #c5eff7
+    }   
+    .gallery {
+        margin: 5px 40px;
+    }
+}
+
+main {
+    font-size: 20px;
+}
+
+main section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Computer-font";
+    font-size: 2em;
+    color: #2574a9;
+}
+
+main section h1 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+main section p {
+    font-size: 0.5em;
+    text-align: center;
+    font-family: "Taxi Driver";
+}
+
+section#contacto a:hover {
+    text-decoration: underline;
+}
+
+main section:nth-child(odd) {
+    /*Impar*/
+    height: 100vh;
+    background-color: #cae1f1;
+}
+
+main section:nth-child(even) {
+    /*Par*/
+    height: 100vh;
+    background-color: #b7d5eb;
+}
+
+section#produtos {
+    height: 100%;
+    padding-top: 80px;
+}
+
+.gallery {
+    margin: 10px 80px;
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    padding: 5px;
+    filter: grayscale(100);
+    transition: 1s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+/*Formata footer
+ rodape**************************************************************************/
+
+footer#rodape {
+    /*limpa configuração de separação entre corpo e lateral*/
+    clear: both;
+    background-color: #cae1f1;
+    padding: 10px;
+}
+
+/*Formata footer
+ rodape contendo p**************************************************************************/
+
+footer#rodape p, footer#rodape a {
+    color: #2574a9;
+    text-align: center;
+    font-family: "Computer-font";
+    color: #2574a9;
+    text-decoration: none;
+}
+
+footer#rodape a:hover {
+    text-decoration: underline;
+}
