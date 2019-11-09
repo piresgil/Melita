@@ -60,9 +60,6 @@ header {
     fill-opacity: 0;
     transition: all 0.4s ease-out;
 }
-svg#logotipo {
-    padding-right: 5px;
-}
 
 .max-logo svg#lettring {
     width: 320px;
@@ -71,18 +68,6 @@ svg#logotipo {
 
 .main-logo svg#lettring {
     width: 280px;
-    fill: #2574a9;
-}
-
-.max-logo svg#logotipo {
-    width: 60px;
-    height: 60px;
-    fill: #c5eff7;
-}
-
-.main-logo svg#logotipo {
-    width: 50px;
-    height: 50px;
     fill: #2574a9;
 }
 
@@ -172,14 +157,7 @@ svg#logotipo {
     .main-logo svg#lettring {
         width: 180px;
     }
-    .max-logo svg#logotipo {
-        width: 35px;
-        height: 35px;
-    }
-    .main-logo svg#logotipo {
-        width: 25px;
-        height: 25px;
-    }
+
     .max-header {
         height: 80px;
     }
