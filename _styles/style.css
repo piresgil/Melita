@@ -239,9 +239,6 @@ header {
         font-size: 1em;
         color: #c5eff7
     }
-    .gallery {
-        margin: 5px 40px;
-    }
 }
 
 main {
@@ -292,12 +289,15 @@ section#produtos {
 .gallery {
     justify-content: center;
     align-items: center;
-    padding: 10px 80px;
+    padding: 10px;
+}
+.row{
+    padding-left: 50px;
 }
 
 .gallery img {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     padding: 5px;
     filter: grayscale(100);
     transition: 1s;
