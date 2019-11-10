@@ -21,6 +21,9 @@ li {
 a {
     text-decoration: none;
 }
+p{
+    padding: 5px;
+}
 
 header {
     position: fixed;
@@ -272,42 +275,16 @@ section#contacto a:hover {
 main section:nth-child(odd) {
     /*Impar*/
     height: 100vh;
+    padding-top: 80px;
     background-color: #cae1f1;
 }
 
 main section:nth-child(even) {
     /*Par*/
     height: 100vh;
+    padding-top: 80px;
     background-color: #b7d5eb;
 }
-
-section#produtos {
-    height: 100%;
-    padding-top: 80px;
-}
-
-.gallery {
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-.row{
-    padding-left: 50px;
-}
-
-.gallery img {
-    width: 180px;
-    height: 180px;
-    padding: 5px;
-    filter: grayscale(100);
-    transition: 1s;
-}
-
-.gallery img:hover {
-    filter: grayscale(0);
-    transform: scale(1.1);
-}
-
 /*Formata footer
  rodape**************************************************************************/
 

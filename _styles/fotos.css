@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.row img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    filter: grayscale(100);
+    transition: 1s;
+}
+
+.row img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    
+    div.row img {
+        width: 75px;
+        height: 75px;
+        padding: 1px;
+    }
+    .gallery {
+        padding-left: 30px;
+    }
+}
